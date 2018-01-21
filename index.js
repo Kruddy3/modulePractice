@@ -14,4 +14,32 @@ var dt = require('./controllers/module');
 
 
 //this works but it doesnt seem like the best approach
-console.log(dt.log().dog)
+// console.log(dt().dog)
+
+//cat is a local that doesnt get returned so no access
+// console.log(dt().cat)
+
+
+//the function dt 2nd array position function call
+// console.log(dt()[1]())
+
+//~~~~~~~~~~~~~~~~~~~~~
+//getting this data from
+// module.exports = function(config){
+//
+//   var isPrivate = {};
+//   var isPublic = {};
+//
+//   function dog() {
+//     return 'doggo'
+//   }
+//   function cat() {
+//     return 'catto'
+//   }
+//   return [dog,cat];
+// };
+
+
+
+console.log(dt.dog('dog'))
+console.log(dt.cat('cat'))
